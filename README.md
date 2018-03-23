@@ -1,5 +1,3 @@
-[![Circle CI](https://circleci.com/gh/transitland/gtfs.svg?style=svg)](https://circleci.com/gh/transitland/gtfs)
-
 ## GTFS Ruby
 
 A Ruby wrapper for the [General Transit Feed Specification](https://developers.google.com/transit/gtfs/)
@@ -22,12 +20,12 @@ Accessing GTFS data from the source:
     source.trips
     source.stop_times
     source.calendars
-    source.calendar_dates     
-    source.fare_attributes    
-    source.fare_rules         
+    source.calendar_dates
+    source.fare_attributes
+    source.fare_rules
     source.shapes
-    source.frequencies        
-    source.transfers          
+    source.frequencies
+    source.transfers
 
 Alternatively:
 
@@ -38,7 +36,7 @@ Alternatively:
 ## Differences with nerdEd/gtfs
 
 This fork extends [nerdEd/gtfs](https://github.com/nerdEd/gtfs) with a number
-of additional features used by Transitland. In some ways, however, it is also
+of additional features used by TPP. In some ways, however, it is also
 breaks compatibility; mainly, entity attribute names are now taken
 directly from the GTFS spec without removing "prefixes", e.g. `stop.stop_timezone`
 instead of `stop.timezone`
